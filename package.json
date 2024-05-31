@@ -1,0 +1,21 @@
+{
+    "name": "whatsapp-bot-control",
+    "version": "1.0.0",
+    "description": "A control interface for a WhatsApp bot using Baileys library.",
+    "main": "script.js",
+    "scripts": {
+      "start": "pm2 start server.js --name whatsapp-bot-control",
+      "stop": "pm2 stop whatsapp-bot-control",
+      "restart": "pm2 restart whatsapp-bot-control",
+      "dev": "http-server"
+    },
+    "dependencies": {
+      "@whiskeysockets/baileys": "^3.5.1",
+      "pm2": "^5.2.0",
+      "http-server": "^14.1.1"
+    },
+    "devDependencies": {},
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  
