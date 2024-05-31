@@ -1,0 +1,11 @@
+# Exported from Render on 2024-05-31T16:40:53Z
+services:
+- type: web
+  name: Web-Delpoy-Open-Source
+  runtime: node
+  repo: https://github.com/AstroLegends/Web-Delpoy-Open-Source
+  plan: free
+  region: frankfurt
+  buildCommand: npm i
+  startCommand: node server.js
+version: "1"
