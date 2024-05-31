@@ -86,5 +86,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   ```
 
 - For environment variables, you can create a `.env` file locally for development and set up the same variables in the Heroku or Render dashboard.
-
-Feel free to customize the README according to your specific project needs and repository details.
