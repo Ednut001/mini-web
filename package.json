@@ -1,21 +1,22 @@
 {
-  "name": "whatsapp-bot-control",
+  "name": "web-delpoy",
   "version": "1.0.0",
   "description": "A control interface for a WhatsApp bot using Baileys library.",
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js --name whatsapp-bot-control",
-    "stop": "pm2 stop whatsapp-bot-control",
-    "restart": "pm2 restart whatsapp-bot-control",
+    "start": "pm2 start server.js --name web",
+    "stop": "pm2 stop web",
+    "restart": "pm2 restart web",
     "dev": "http-server ./public"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "http-server": "^14.1.1",
-    "pm2": "^5.4.0",
-    "pino": "^8.1.0",
     "body-parser": "^1.20.1",
-    "path": "^0.12.7"
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "http-server": "^14.1.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "pino": "^8.1.0"
   },
   "author": "Astro",
   "license": "ISC"
