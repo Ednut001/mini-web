@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Deployment</title>
+    <link rel="icon" type="image/jpeg" href="https://i.imgur.com/H6ClIod.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Ensure Arial is used */
+            background-color: #00FFFF; /* Aqua */
+            color: #333; /* Dark gray for text */
+            display: grid; /* Use grid layout */
+            grid-template-columns: 1fr; /* Define columns for the grid */
+            grid-template-rows: 1fr; /* Define rows for the grid */
+            justify-items: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Padding around the content */
+            overflow: hidden; /* Prevent overflow */
+            text-align: center; /* Center text */
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide text that goes beyond the element's boundaries */
+            animation: typing 4s infinite; /* Typing animation */
+            color: #333; /* Set a color for the h2 */
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+                opacity: 0;
+            }
+            50% {
+                width: 100%;
+                opacity: 1;
+            }
+            100% {
+                width: 100%;
+                opacity: 0;
+            }
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark gray for text */
+        }
+
+        e, a {
+            color: #6B8E23; /* Olive Drab for emphasis */
+            font-style: italic;
+        }
+
+        .button-container {
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive button layout */
+            gap: 20px; /* Space between buttons */
+        }
+
+        .btn {
+            padding: 20px 40px;
+            font-size: 18px;
+            background-color: #4B0082; /* Indigo for the button background */
+            color: #F0E68C; /* Khaki for button text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.4s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none; /* Remove default link styling */
+        }
+
+        .btn:hover {
+            transform: scale(1.05) rotate(2deg); /* Scale and rotate on hover */
+            background-color: #3E0B62; /* Darker Indigo on hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+
+        .bouncing-circle {
+            width: 30px;
+            height: 30px;
+            border: 5px solid #6B8E23; /* Olive Drab border */
+            background-color: transparent;
+            position: absolute;
+            border-radius: 50%;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .button-container a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit color from parent */
+        }
+
+        .button-container a:nth-child(1) {
+            animation: flip 1.5s infinite 0s;
+        }
+
+        .button-container a:nth-child(2) {
+            animation: flip 1.5s infinite 0.4s;
+        }
+
+        .button-container a:nth-child(3) {
+            animation: flip 1.5s infinite 0.8s;
+        }
+
+        .button-container a:nth-child(4) {
+            animation: flip 1.5s infinite 1.2s;
+        }
+
+        .button-container a:nth-child(5) {
+            animation: flip 1.5s infinite 1.6s;
+        }
+
+        @keyframes flip {
+            0% {
+                transform: perspective(400px) rotateY(0deg);
+            }
+            50% {
+                transform: perspective(400px) rotateY(180deg);
+            }
+            100% {
+                transform: perspective(400px) rotateY(0deg);
+            }
+        }
+
+        /* Disable default link styling in desktop browsers */
+        @media (hover: hover) and (pointer: fine) {
+            .button-container a:hover {
+                text-decoration: none; /* No underline on hover */
+                color: inherit; /* Keep inherited color */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>WhatsApp Botto Session</h2>
+    <p>Hello there once you get your session, your <e>creds.json</e> file will be sent directly to you and will be deleted from our server.<br><b>Note: If anyone asks you for it, don't share it. Keep your <e>creds.json</e> file safe. <e><a href="http://github.com/AstroLegends" target="_blank">Thank You</a></e></b></p>
+
+    <div class="bouncing-circle top-left"></div>
+    <div class="bouncing-circle top-right"></div>
+    <div class="bouncing-circle bottom-left"></div>
+    <div class="bouncing-circle bottom-right"></div>
+
+    <div class="button-container">
+        <a href="https://pairing-web-session-for-whatsa-74cae2de7758.herokuapp.com/" target="_blank" class="btn">Get Session</a>
+        <a href="https://t.me/astrolegendtalks" target="_blank" class="btn">Support</a>
+        <a href="https://t.me/AstroLegendFx" target="_blank" class="btn">Telegram Chat</a>
+        <a href="https://github.com/AstroLegends/Web-Delpoy-Open-Source" target="_blank" class="btn">Source Code</a>
+    </div>
+</body>
+</html>
